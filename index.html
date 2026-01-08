@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>InnovationCommercialisation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- =======================
+     NAVBAR
+======================= -->
+<header class="navbar">
+    <div class="logo">
+        <img src="images/logo.jpg" alt="Logo" class="logo-img">
+        <span>InnovationCommercialisation</span>
+    </div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#founder">Founder</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- =======================
+     HERO
+======================= -->
+<section class="hero" id="home">
+    <div class="hero-overlay">
+        <h1>InnovationCommercialisation</h1>
+        <p>Advancing the commercialisation of technological innovation</p>
+    </div>
+</section>
+
+<!-- =======================
+     ABOUT
+======================= -->
+<section class="about-company" id="about">
+    <h2>About the Company</h2>
+    <p>
+        InnovationCommercialisation (Pty) Ltd is a boutique technological
+        innovation management business which focuses on the following areas 
+        to assist clients with commercialisation:
+    </p>
+    
+    <ul class="bullet-list">
+        <li>Customised workshops in commercialisation</li>
+        <li>Curated incubation programs</li>
+        <li>Consulting on technological innovation</li>
+        <li>Courses and content development</li>
+        <li>Colloquiums on commercialisation of technological innovation and incubation</li>
+        <li>Catalyzing innovation (prototype centre in a box)</li>
+    </ul>
+</section>
+
+<!-- =======================
+     SERVICES (FLIP CARDS WITH CLICK POPUP)
+======================= -->
+<section class="services" id="services">
+    <h2>Our Services</h2>
+
+    <div class="services-grid">
+
+        <!-- 1 -->
+        <div class="service-card" onclick="openServiceModal(1)">
+            <div class="service-inner">
+                <div class="service-front" style="background-image:url('images/workshop.jpg')">
+                    <h3>Customised Workshops & Training</h3>
+                </div>
+                <div class="service-back">
+                    <h3>Customised Workshops & Training</h3>
+                    <p>We can assist your organisation with customised workshops and training in commercialisation of technological innovations.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="service-card" onclick="openServiceModal(2)">
+            <div class="service-inner">
+                <div class="service-front" style="background-image:url('images/incubation.jpg')">
+                    <h3>Curated Incubation Programmes</h3>
+                </div>
+                <div class="service-back">
+                    <h3>Curated Incubation Programmes</h3>
+                    <p>We can train your cohort of entrepreneurs and projects on the full spectrum of taking innovations from idea to market.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="service-card" onclick="openServiceModal(3)">
+            <div class="service-inner">
+                <div class="service-front" style="background-image:url('images/consulting.jpg')">
+                    <h3>Consulting on Innovation</h3>
+                </div>
+                <div class="service-back">
+                    <h3>Consulting on Innovation</h3>
+                    <p>Our main areas where we can assist include market assessments and commercialisation strategies.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="service-card" onclick="openServiceModal(4)">
+            <div class="service-inner">
+                <div class="service-front" style="background-image:url('images/courses.jpg')">
+                    <h3>Courses & Content Development</h3>
+                </div>
+                <div class="service-back">
+                    <h3>Courses & Content Development</h3>
+                    <p>We can develop courses and content to train your organisation in technological innovation.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="service-card" onclick="openServiceModal(5)">
+            <div class="service-inner">
+                <div class="service-front" style="background-image:url('images/colloquium.jpg')">
+                    <h3>Colloquiums on Innovation</h3>
+                </div>
+                <div class="service-back">
+                    <h3>Colloquiums on Innovation</h3>
+                    <p>We can assist in running a seminar for your organisation on the key topics on innovation management.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="service-card" onclick="openServiceModal(6)">
+            <div class="service-inner">
+                <div class="service-front" style="background-image:url('images/prototype.jpg')">
+                    <h3>Catalysing Innovation</h3>
+                </div>
+                <div class="service-back">
+                    <h3>Catalysing Innovation</h3>
+                    <p>We can help put together a prototyping centre that can assist your innovators in product development.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- POPUP MODAL FOR SERVICE DETAILS -->
+<div id="serviceModal" class="modal" onclick="closeServiceModal()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <span class="close-btn" onclick="closeServiceModal()">&times;</span>
+        <div id="modalBody"></div>
+    </div>
+</div>
+
+<!-- =======================
+     FOUNDER
+======================= -->
+<section class="founder" id="founder">
+    <div class="founder-container">
+
+        <div class="founder-image">
+            <img src="images/founder.jpg" alt="Dr Phumuza Langa">
+        </div>
+
+        <div class="founder-text">
+            <h2>About the Founder & CEO</h2>
+            <h3>Dr Phumuza Langa</h3>
+
+            <p>
+                Dr Phumuza Langa is the Founder and CEO of InnovationCommercialisation (Pty) Ltd.
+                He holds a PhD in Operations Management from the University of Johannesburg (UJ),
+                with research focusing on dynamic capabilities developed by innovative enterprises
+                through technology business incubation services.
+            </p>
+
+            <p>
+                His experience in the commercialisation of technological innovation spans over
+                15 years, having served in several key strategic roles including:
+            </p>
+
+            <ul class="bullet-list">
+                <li>Senior Manager: Commercial Analyst (University of Johannesburg, Technology Transfer Office)</li>
+                <li>Research and Development (R&D) Outcomes Manager at the Council for Scientific and Industrial Research (CSIR), responsible for IP commercialisation within the Materials Science Manufacturing unit</li>
+                <li>Commercialisation Manager at the University of Pretoria Technology Transfer Office</li>
+                <li>Deputy Director responsible for technology transfer establishment at the National Intellectual Property Management Office (NIPMO)</li>
+            </ul>
+
+            <p><strong>Some of the key project highlights include:</strong></p>
+
+            <ul class="bullet-list">
+                <li>Successfully setting up the first University Innovation Pod (UNIPOD) in South Africa at UJ, a United Nations Development Programme (UNDP) supported facility that helps entrepreneurs prototype their innovations</li>
+                <li>Instrumental in setting up the UJ Technology Transfer Office (TTO) incubation programme for innovative entrepreneurial students</li>
+                <li>Developed a TTO framework at NIPMO that served as a non-prescriptive guide for technology transfer professionals in publicly financed R&D institutions</li>
+            </ul>
+
+            <p>
+                Overall, he is a well rounded professional involved in the strategic management
+                of technological innovation, with a particular focus on IP commercialisation,
+                business incubation, spin-out companies, and technology transfer.
+            </p>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- =======================
+     CONTACT
+======================= -->
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+
+    <div class="contact-grid">
+
+        <div class="contact-card">
+            <h3>📧 Email</h3>
+            <p>info@innovationcommercialisation.com</p>
+        </div>
+
+        <div class="contact-card">
+            <h3>📞 Phone</h3>
+            <p>+27 78 218 3986</p>
+        </div>
+
+        <div class="contact-card">
+            <h3>💼 LinkedIn</h3>
+            <p>linkedin.com/company/innovation-commercialisation</p>
+        </div>
+
+    </div>
+</section>
+
+<script>
+// Service details data
+const serviceDetails = {
+    1: {
+        title: "Customised Workshops & Training",
+        content: "We can assist your organisation with customised workshops and training in commercialisation of technological innovations. These are filled with a variety of visual aids and exercises to keep the audience engaged coupled with solid theoretical foundations."
+    },
+    2: {
+        title: "Curated Incubation Programmes",
+        content: "We can train your cohort of entrepreneurs and projects on the full spectrum of taking innovations from idea to market. These can be delivered online and or physically on site or venue of preference over a predetermined venue."
+    },
+    3: {
+        title: "Consulting on Innovation",
+        content: "Our main areas where we can assist entail the following:<br>• Market assessments for innovative projects<br>• Commercialisation strategies<br>• Business plans and cases for technological innovation projects<br>• Feasibility studies for innovations"
+    },
+    4: {
+        title: "Courses & Content Development",
+        content: "We can develop courses and content to train your organisation in technological innovation. Covering various key areas such as prototype development, business incubation and technology roadmapping for commercialisation."
+    },
+    5: {
+        title: "Colloquiums on Innovation",
+        content: "We can assist in running a seminar for your organisation on the key topics on innovation management and commercialisation of technological innovations."
+    },
+    6: {
+        title: "Catalysing Innovation",
+        content: "We can help put together a prototyping centre that can assist your innovators in product development and create fantastic technological innovations in an expedited process."
+    }
+};
+
+function openServiceModal(serviceId) {
+    const modal = document.getElementById('serviceModal');
+    const modalBody = document.getElementById('modalBody');
+    const service = serviceDetails[serviceId];
+    
+    modalBody.innerHTML = `
+        <h2>${service.title}</h2>
+        <p>${service.content}</p>
+    `;
+    
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+}
+
+function closeServiceModal() {
+    const modal = document.getElementById('serviceModal');
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto'; // Re-enable scrolling
+}
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeServiceModal();
+    }
+});
+</script>
+
+</body>
+</html>
